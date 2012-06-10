@@ -1,0 +1,11 @@
+# Shell
+alias ll="ls -l"
+alias la="ls -la"
+
+# Processes
+alias tu="top -o cpu" 						# cpu
+alias tm="top -o vsize"						# memory
+
+# tmux
+alias tmux="TERM=screen-256color-bce tmux"
+
