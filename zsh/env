@@ -8,6 +8,7 @@ export VIM_APP_DIR="/Applications"
 
 # Custom binaries
 export PATH=$PATH:~/.bin
+export PATH=$PATH:~/bin
 
 # PostgreSQL
 export PATH=$PATH:/Library/PostgreSQL/9.0/bin
