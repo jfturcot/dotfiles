@@ -8,5 +8,3 @@
 	ui = true
 	status = auto
 	branch = auto
-[include]
-  path = ~/.gitconfig.github
