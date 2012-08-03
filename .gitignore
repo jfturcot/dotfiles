@@ -2,3 +2,4 @@ vim/autoload/*
 vim/bundle/*
 vim/.netrwhist
 zsh/env_secure
+gitconfig.github

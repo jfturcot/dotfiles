@@ -1,6 +1,6 @@
 [core]
 	editor = vim
-	excludesfile = /Users/jfturcot/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [user]
 	name = Jean-Francois Turcot
 	email = jf.turcot@gmail.com
@@ -8,12 +8,5 @@
 	ui = true
 	status = auto
 	branch = auto
-[github]
-	user = jfturcot
-	token = ba963bb7a4f616c6973fb35996bc6de3
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+[include]
+  path = ~/.gitconfig.github
