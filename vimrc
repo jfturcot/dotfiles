@@ -15,6 +15,9 @@ set number                        " line numbers
 filetype plugin indent on         " load file type plugins + indentation
 set hidden                        " Switch buffer without saving
 
+set splitbelow                    " Split horizontal opens below
+set splitright                    " Split vertical opens on the right
+
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
