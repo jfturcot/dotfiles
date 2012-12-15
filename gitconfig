@@ -8,3 +8,5 @@
 	ui = true
 	status = auto
 	branch = auto
+[push]
+	default = matching
