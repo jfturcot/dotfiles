@@ -50,6 +50,13 @@ set listchars=tab:▸\ ,eol:¬       " TextMate's symbols for tabstops and EOLs
 vnoremap < <gv
 vnoremap > >gv
 
+"" resize horzontal split window
+nmap <C-k> <C-W>-<C-W>-
+nmap <C-j> <C-W>+<C-W>+
+"" resize vertical split window
+nmap <C-h> <C-W>><C-W>>
+nmap <C-l> <C-W><<C-W><
+
 "" Visual wrap column
 if exists('+colorcolumn')         " vim 7.3                       
   set colorcolumn=80
@@ -61,8 +68,6 @@ endif
 "" Use arrow key to change buffer
 :noremap <left> :bp<cr>
 :noremap <right> :bn<cr>
-:noremap <up> :ls<cr>
-:noremap <down> <C-^>
 
 "" Use tab for auto completion
 function! SuperTab()
