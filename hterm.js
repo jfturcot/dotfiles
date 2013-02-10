@@ -10,6 +10,6 @@ term_.prefs_.set('foreground-color', "#839496");
 // term_.prefs_.set('foreground-color', "#657b83");
 
 // Font settings
-term_.prefs_.set('font-family', 'Monaco');
-term_.prefs_.set('font-size', 16);
+term_.prefs_.set('font-family', 'Anonymous Pro');
+term_.prefs_.set('font-size', 18);
 term_.prefs_.set('font-smoothing', 'subpixel-antialiased');
