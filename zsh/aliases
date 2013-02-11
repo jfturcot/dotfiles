@@ -9,3 +9,7 @@ alias tm="top -o vsize"						# memory
 # tmux
 alias tmux="TERM=screen-256color-bce tmux"
 
+# sshuttle
+alias tunnel='sshuttle --D --pidfile=/tmp/sshuttle.pid -r <server> --dns 0/0'
+alias stoptunnel='[[ -f /tmp/sshuttle.pid ]] && kill `cat /tmp/sshuttle.pid`'
+
