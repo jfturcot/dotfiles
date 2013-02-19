@@ -46,6 +46,9 @@ set smartcase                     " ... unless they contain at least one capital
 nmap <leader>l :set list!<cr>
 set listchars=tab:▸\ ,eol:¬       " TextMate's symbols for tabstops and EOLs
 
+"" Show/Hide NERDTree
+nmap <leader>e :NERDTreeToggle<cr>
+
 "" Reselect visual block after indent/outdent
 vnoremap < <gv
 vnoremap > >gv
