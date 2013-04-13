@@ -1,4 +1,30 @@
-call pathogen#infect()            " pathogen.vim
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle "gmarik/vundle"
+Bundle "pydave/AsyncCommand"
+Bundle "mileszs/ack.vim"
+Bundle "kien/ctrlp.vim"
+Bundle "scrooloose/nerdtree"
+Bundle "scrooloose/syntastic"
+Bundle "kchmck/vim-coffee-script"
+Bundle "altercation/vim-colors-solarized"
+Bundle "tpope/vim-commentary"
+Bundle "tpope/vim-cucumber"
+Bundle "tpope/vim-fugitive"
+Bundle "airblade/vim-gitgutter"
+Bundle "nono/vim-handlebars"
+Bundle "groenewege/vim-less"
+Bundle "tpope/vim-markdown"
+Bundle "mnick/vim-pomodoro"
+Bundle "tpope/vim-rails"
+Bundle "tpope/vim-rvm"
+Bundle "jgdavey/vim-turbux"
+Bundle "ingydotnet/yaml-vim"
+Bundle "benmills/vimux"
 
 set title                         " Set the terminal's title
 
@@ -8,11 +34,9 @@ set nobackup                      " Don't make a backup before overwriting a fil
 set nowritebackup                 " And again.
 set directory=/tmp                " Keep swap files in /tmp location
 
-set nocompatible
 set encoding=utf-8
 set showcmd                       " display incomplete commands
 set number                        " line numbers
-filetype plugin indent on         " load file type plugins + indentation
 set hidden                        " Switch buffer without saving
 
 set splitbelow                    " Split horizontal opens below
@@ -81,6 +105,10 @@ function! SuperTab()
   endif
 endfunction
 imap <Tab> <C-R>=SuperTab()<CR>
+
+"" Show autocomplete menu
+set wildmenu
+set wildmode=full
 
 "" Set the Ctags's tag file search order
 set tags=./tags;
