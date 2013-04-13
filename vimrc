@@ -25,6 +25,8 @@ Bundle "tpope/vim-rvm"
 Bundle "jgdavey/vim-turbux"
 Bundle "ingydotnet/yaml-vim"
 Bundle "benmills/vimux"
+Bundle "godlygeek/tabular"
+Bundle "gregsexton/Vomodoro"
 
 set title                         " Set the terminal's title
 
