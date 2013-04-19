@@ -27,6 +27,7 @@ Bundle "ingydotnet/yaml-vim"
 Bundle "benmills/vimux"
 Bundle "godlygeek/tabular"
 Bundle "gregsexton/Vomodoro"
+Bundle "thoughtbot/vim-rspec"
 
 set title                         " Set the terminal's title
 
@@ -118,3 +119,7 @@ set tags=./tags;
 "" Use Ack instead of grep
 set grepprg=ack
 
+" Rspec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
