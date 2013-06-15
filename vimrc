@@ -28,6 +28,10 @@ Bundle "benmills/vimux"
 Bundle "godlygeek/tabular"
 Bundle "gregsexton/Vomodoro"
 Bundle "thoughtbot/vim-rspec"
+Bundle "Lokaltog/vim-powerline"
+Bundle "stephenmckinney/vim-solarized-powerline"
+
+filetype plugin indent on     " required!
 
 set title                         " Set the terminal's title
 
@@ -36,6 +40,8 @@ set visualbell                    " No beeping
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
 set directory=/tmp                " Keep swap files in /tmp location
+
+set laststatus=2                  " Always show the statusline
 
 set encoding=utf-8
 set showcmd                       " display incomplete commands
@@ -56,6 +62,10 @@ let g:solarized_termcolors = 256
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
 colorscheme solarized
+
+let g:Powerline_theme='short'
+let g:Powerline_colorscheme='solarized256_dark'
+let g:Powerline_symbols = 'fancy'
 
 "" Whitespace
 set nowrap                        " don't wrap lines
