@@ -28,8 +28,7 @@ Bundle "benmills/vimux"
 Bundle "godlygeek/tabular"
 Bundle "gregsexton/Vomodoro"
 Bundle "thoughtbot/vim-rspec"
-Bundle "Lokaltog/vim-powerline"
-Bundle "stephenmckinney/vim-solarized-powerline"
+Bundle 'bling/vim-airline'
 
 filetype plugin indent on     " required!
 
@@ -63,9 +62,7 @@ let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
 colorscheme solarized
 
-let g:Powerline_theme='short'
-let g:Powerline_colorscheme='solarized256_dark'
-let g:Powerline_symbols = 'fancy'
+let g:airline_theme='solarized2'
 
 "" Whitespace
 set nowrap                        " don't wrap lines
