@@ -13,3 +13,4 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias tunnel='sshuttle --D --pidfile=/tmp/sshuttle.pid -r <server> --dns 0/0'
 alias stoptunnel='[[ -f /tmp/sshuttle.pid ]] && kill `cat /tmp/sshuttle.pid`'
 
+alias rake='noglob rake'
