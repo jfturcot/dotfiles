@@ -6,6 +6,7 @@ call vundle#rc()
 
 Bundle "gmarik/vundle"
 Bundle "pydave/AsyncCommand"
+Bundle "Valloric/YouCompleteMe"
 Bundle "mileszs/ack.vim"
 Bundle "kien/ctrlp.vim"
 Bundle "scrooloose/nerdtree"
@@ -62,7 +63,7 @@ let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
 colorscheme solarized
 
-let g:airline_theme='solarized2'
+let g:airline_theme='solarized'
 
 "" Whitespace
 set nowrap                        " don't wrap lines
@@ -105,20 +106,6 @@ endif
 "" Use arrow key to change buffer
 :noremap <left> :bp<cr>
 :noremap <right> :bn<cr>
-
-"" Use tab for auto completion
-function! SuperTab()
-  if (strpart(getline('.'),col('.')-2,1)=~'^\W\?$')
-    return "\<Tab>"
-  else
-    return "\<C-n>"
-  endif
-endfunction
-imap <Tab> <C-R>=SuperTab()<CR>
-
-"" Show autocomplete menu
-set wildmenu
-set wildmode=full
 
 "" Set the Ctags's tag file search order
 set tags=./tags;
