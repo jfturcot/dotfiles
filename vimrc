@@ -23,12 +23,11 @@ Bundle "tpope/vim-markdown"
 Bundle "mnick/vim-pomodoro"
 Bundle "tpope/vim-rails"
 Bundle "tpope/vim-rvm"
-Bundle "jgdavey/vim-turbux"
 Bundle "ingydotnet/yaml-vim"
-Bundle "benmills/vimux"
 Bundle "godlygeek/tabular"
 Bundle "gregsexton/Vomodoro"
 Bundle "thoughtbot/vim-rspec"
+Bundle 'jgdavey/tslime.vim'
 Bundle 'bling/vim-airline'
 
 filetype plugin indent on     " required!
@@ -113,6 +112,12 @@ set tags=./tags;
 "" Use Ack instead of grep
 set grepprg=ack
 
-" Rspec.vim mappings
+" Rspec in another tmux pane
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+
+" vim-rspec mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
