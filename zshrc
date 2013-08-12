@@ -38,4 +38,3 @@ source ~/.dotfiles/zsh/env_secure # Not in the repository, keep this secure
 source ~/.dotfiles/zsh/config
 source ~/.dotfiles/zsh/aliases
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
