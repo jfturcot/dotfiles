@@ -29,6 +29,8 @@ Bundle "gregsexton/Vomodoro"
 Bundle "thoughtbot/vim-rspec"
 Bundle 'jgdavey/tslime.vim'
 Bundle 'bling/vim-airline'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 
 filetype plugin indent on     " required!
 
