@@ -5,7 +5,6 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle "gmarik/vundle"
-Bundle "pydave/AsyncCommand"
 Bundle "Valloric/YouCompleteMe"
 Bundle "mileszs/ack.vim"
 Bundle "kien/ctrlp.vim"
