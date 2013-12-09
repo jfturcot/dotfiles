@@ -30,6 +30,7 @@ Bundle 'jgdavey/tslime.vim'
 Bundle 'bling/vim-airline'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
+Bundle 'wakatime/vim-wakatime'
 Bundle 'rodjek/vim-puppet'
 
 filetype plugin indent on     " required!
