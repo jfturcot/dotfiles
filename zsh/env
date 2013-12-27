@@ -3,7 +3,7 @@ export LANG=en_CA.UTF-8
 # Homebrew
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-export EDITOR="/usr/local/bin/vim"
+export EDITOR="vim"
 export VIM_APP_DIR="/Applications"
 
 # Custom binaries
