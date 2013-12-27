@@ -24,3 +24,7 @@ export PATH=$PATH:/usr/local/share/npm/bin
 
 # Android SDK
 export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r20.0.1
+
+# Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
