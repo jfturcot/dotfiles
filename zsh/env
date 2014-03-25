@@ -23,4 +23,6 @@ export PATH=$PATH:/usr/local/share/npm/bin
 # export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.4.2.2/jars"
 
 # Android SDK
-export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r20.0.1
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
+export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
