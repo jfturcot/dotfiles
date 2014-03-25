@@ -3,7 +3,7 @@ export LANG=en_CA.UTF-8
 # Homebrew
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-export EDITOR="/usr/local/bin/vim"
+export EDITOR="vim"
 export VIM_APP_DIR="/Applications"
 
 # Custom binaries
@@ -26,3 +26,6 @@ export PATH=$PATH:/usr/local/share/npm/bin
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
+
+# Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
