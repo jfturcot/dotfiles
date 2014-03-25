@@ -11,6 +11,7 @@ Bundle "kien/ctrlp.vim"
 Bundle "scrooloose/nerdtree"
 Bundle "scrooloose/syntastic"
 Bundle "kchmck/vim-coffee-script"
+Bundle "AndrewRadev/vim-eco"
 Bundle "altercation/vim-colors-solarized"
 Bundle "tpope/vim-commentary"
 Bundle "tpope/vim-cucumber"
@@ -30,8 +31,8 @@ Bundle 'jgdavey/tslime.vim'
 Bundle 'bling/vim-airline'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
-Bundle 'wakatime/vim-wakatime'
 Bundle 'rodjek/vim-puppet'
+Bundle 'dockyard/vim-easydir'
 
 filetype plugin indent on     " required!
 
