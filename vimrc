@@ -126,6 +126,6 @@ let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 " map <Leader>a :call RunAllSpecs()<CR>
 
 " thyme (pomodoro)
-nmap <Leader>t :! rvm 2.0 do thyme -d<CR>
-nmap <Leader>T :! rvm 2.0 do thyme -s<CR>
+nmap <leader>t :!thyme -d<cr>
+nmap <leader>T :!thyme -s<cr>
 
