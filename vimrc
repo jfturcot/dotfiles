@@ -30,7 +30,6 @@ Bundle "thoughtbot/vim-rspec"
 Bundle 'jgdavey/tslime.vim'
 Bundle 'bling/vim-airline'
 Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'
 Bundle 'rodjek/vim-puppet'
 Bundle 'dockyard/vim-easydir'
 Bundle 'junegunn/goyo.vim'
