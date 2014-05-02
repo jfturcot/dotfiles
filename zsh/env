@@ -16,16 +16,5 @@ export PATH=$PATH:/Library/PostgreSQL/9.0/bin
 export NODE_PATH=/usr/local/lib/node_modules
 export PATH=$PATH:/usr/local/share/npm/bin
 
-# EC2
-# export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
-# export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
-# export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem)"
-# export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.4.2.2/jars"
-
-# Android SDK
-export ANDROID_HOME=/usr/local/opt/android-sdk
-
-export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
-
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
