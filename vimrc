@@ -33,6 +33,7 @@ Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'rodjek/vim-puppet'
 Bundle 'dockyard/vim-easydir'
+Bundle 'junegunn/goyo.vim'
 
 filetype plugin indent on     " required!
 
