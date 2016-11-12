@@ -1,8 +1,7 @@
-# rvm
-# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-# rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 function update_terminal_title() { print -Pn "\e]0;%n :: %~/ \a" }
 
+###-tns-completion-start-###
+if [ -f /Users/jfturcot/.tnsrc ]; then 
+    source /Users/jfturcot/.tnsrc 
+fi
+###-tns-completion-end-###

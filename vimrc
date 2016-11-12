@@ -4,35 +4,37 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle "gmarik/vundle"
-Bundle "Valloric/YouCompleteMe"
-Bundle "mileszs/ack.vim"
-Bundle "kien/ctrlp.vim"
-Bundle "scrooloose/nerdtree"
-Bundle "scrooloose/syntastic"
-Bundle "kchmck/vim-coffee-script"
-Bundle "AndrewRadev/vim-eco"
-Bundle "altercation/vim-colors-solarized"
-Bundle "tpope/vim-commentary"
-Bundle "tpope/vim-cucumber"
-Bundle "tpope/vim-fugitive"
-Bundle "airblade/vim-gitgutter"
-Bundle "nono/vim-handlebars"
-Bundle "groenewege/vim-less"
-Bundle "tpope/vim-markdown"
-Bundle "mnick/vim-pomodoro"
-Bundle "tpope/vim-rails"
-Bundle "tpope/vim-rvm"
-Bundle "ingydotnet/yaml-vim"
-Bundle "godlygeek/tabular"
-Bundle "gregsexton/Vomodoro"
-Bundle "thoughtbot/vim-rspec"
-Bundle 'jgdavey/tslime.vim'
-Bundle 'bling/vim-airline'
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rodjek/vim-puppet'
-Bundle 'dockyard/vim-easydir'
-Bundle 'junegunn/goyo.vim'
+Plugin 'gmarik/vundle'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'mileszs/ack.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-rails'
+Plugin 'ingydotnet/yaml-vim'
+Plugin 'godlygeek/tabular'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'jgdavey/tslime.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'dockyard/vim-easydir'
+Plugin 'rizzatti/dash.vim'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'JarrodCTaylor/vim-js2coffee'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'Quramy/tsuquyomi'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'Quramy/vim-js-pretty-template'
+Plugin 'mhartington/vim-angular2-snippets'
 
 filetype plugin indent on     " required!
 
@@ -116,16 +118,20 @@ set tags=./tags;
 "" Use Ack instead of grep
 set grepprg=ack
 
-" Rspec in another tmux pane
-let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
-" vim-rspec mappings
-" map <Leader>t :call RunCurrentSpecFile()<CR>
-" map <Leader>s :call RunNearestSpec()<CR>
-" map <Leader>l :call RunLastSpec()<CR>
-" map <Leader>a :call RunAllSpecs()<CR>
-
-" thyme (pomodoro)
-nmap <leader>t :!thyme -d<cr>
-nmap <leader>T :!thyme -s<cr>
+" Typescript
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi']
+if !exists("g:ycm_semantic_triggers")
+  let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers['typescript'] = ['.']
 
